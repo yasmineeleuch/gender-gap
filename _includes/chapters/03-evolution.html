@@ -1,43 +1,37 @@
-
-<h1 id="evolution">Movie nature evolution over the years!</h1>
+<h1 id="evolution">Let’s talk about women</h1>
 <div class="report-chapter">
-    <h2 id="general_sentiment">General sentiment</h2>
     <p class="report-paragraph">
-        <!--  -->
+        Women undergo stereotypes: they are often expected to be accommodating and emotional, while men are usually expected to be 
+        self-confident and aggressive. But how are these stereotypes, about women and men, translated into movies?
     </p>
-    <div class="row justify-content-around">
-        {% include plots/general_sentiment_in_years.html %}
-    </div>  
-
-    <h2 id="emotions">Emotions</h2>  
+    <div style="display: flex;">
+        <img src="{{site.baseurl}}/assets/images/female.png" alt="image1">
+        <img src="{{site.baseurl}}/assets/images/male.png" alt="image2">
+    </div>
     <p class="report-paragraph">
-        <!--  -->
+        Women will most probably be present in movie genres such as Romance film, Comedy and Drama, while men are mostly seen in Action,
+         Adventure and Crime fiction. We also see a lot of men in Romance movies because well, for a romance to take place, two people 
+         (often a guy and a girl) are needed. 
     </p>
-    <div class="row justify-content-around">
-        {% include plots/plot_emotions.html %}
-    </div>
-    <div class="row justify-content-around">
-        {% include plots/classifier_emotions.html %}
-    </div>
-
-    <h2 id="violence">Violence</h2>  
     <p class="report-paragraph">
-        <!--  -->
+        Looking at movie summaries can be very informative on the way women and men are described. Looking at words often associated with women that differ from words associated with men,
+         “love” is the first one. So cliché right…  
+        In order to deepen our analysis, we looked at words directly associated with the main character. 
+         More precisely, we focused on words located 2 words apart from the name of the main character, which leaves us with the following textual analysis.
+        
     </p>
-    <div class="row justify-content-around">
-        {% include plots/violence_score_in_years_no_reg.html %}
-    </div>
+    <div style="display: flex;">
+        <img src="{{site.baseurl}}/assets/images/frequencies.png" alt="frequencies" style="max-width: 90%; max-height: 1200px;">
+      </div>
+      
+    <p class="report-paragraph">
+        When talking about men, usually masculine words are used. We find the words “father” and “son” for example. When talking about women, 
+        both feminine and also masculine attributes are used. For female characters, both “father” and “mother”, as well as “son” and “daughter” are often used.
+        This imposes the idea that female characters are created to support male characters, as Whiterspoon describes in her interview, or that they can not exist by themselves. 
+        For men, we quickly find nouns such as “kill”, “police”, which are associated with violent topics. For women, nouns and adjectives such as “love”, “beautiful”,  and “marry” are present.
+        The 3rd most used adjective for women is “pregnant”, while not a majority of female characters are pregnant in movies. It makes the viewers associate ideas of love, sweetness and motherhood to women. 
+        Finally, there are more action verbs used to describe male characters. This reinforces the idea that male characters are active protagonists and that female characters are more passive.
 
-    <div class="row justify-content-around">
-        {% include plots/violence_score_in_years_from_1970_reg.html %}
-    </div>
-
-    <div class="row justify-content-around">
-        {% include tables/top_manifests_in_years.html %}
-    </div>
-
-    <div class="row justify-content-around">
-        {% include tables/top_5_manifests_over_years.html %}
-    </div>
+    </p>
 
 </div>

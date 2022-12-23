@@ -1,34 +1,38 @@
-<h1 id="which">Which data have we used?</h1>
+<h1 id="which">Hey pretty woman, are you there?</h1>
 <div div class="report-chapter">
     <p class="report-paragraph">
-        To be able to obtain some conclusions for the cookbook, on which future directors can base their movies we need a lot of data.
-        Our analysis is based on the CMU Movie Summary Corpus. However, the amount of data has shown not to be sufficient for our purposes, 
-        as only small fraction cotains revenue data.
-        Thereofre, we decided to get more data from the internet and scraped another (and also the same :D) movies from IMDB and TMDB. 
-        This data unfortunately contain again only a small fraction of the movies with revenue data, but as the full set is bigger, the 
-        fraction is bigger as well. The revenue data are used for the analysis for the cookbook.
-        In the following figure can be seen composition of the data we used in our analysis and their respective distributions over the years.
+        Examining movie plots allows us to analyze the prevalence of feminine and masculine pronouns to understand the representation of each gender on screen,
+        as summaries are the direct representation of the movie itself. Our analysis shows that there is a significant difference between the occurrence of feminine and masculine pronouns in the summaries,
+        with feminine pronouns appearing in only 70% of summaries and masculine pronouns appearing in 89% of them. This suggests that there may be a disparity in the representation of men and women in these movies.
+
     </p>
+    <div class="row justify-content-around">
+        {% include plots/first_scat.html %}
+    </div>
     <!-- Here is a place for data size and distribution comparison -->
     <div class="comparison-img row justify-content-around">
-        <img src="{{site.baseurl}}/assets/images/Comparison_ds.svg" alt="Size of the industry">
-        <p >We based our analysis on 7.5k revenues data from CMU, 17k revenue data in total, 42k movie data from CMU and over 400k films scraped from the internet.</p>
+        <p >In terms of numbers, masculine pronouns are almost 5 times more used than feminine pronouns.
+            This phenomenon of numerical superiority compared to the actual ratio of men and women in the studied movies (reminder: 1 to 3), 
+            if we can say so, can at least be partly explained by the English language itself. Masculine pronouns can be used in order to target a generic audience and not exclusively men.
+            We cannot discuss women's representation without having a look at the main protagonist of a movie. Everyone agrees that the main character is the most important character in a film.
+            Through this person, an audience experiences first-hand the emotions and consequences of the narrative surrounding them.
+            The proportion of female main characters is aligned with the proportion of female characters on the entire dataset, with approximately 37% of women protagonists. 
+            Having a look at the most interesting and homogeneous data, from 1970 until 2011, confirms the positive trends in the evolution of male and female main characters.
+            This increase for both groups is due to the large increase in the number of movies released each year.
     </div>  
-    <div class="row justify-content-around mb-3 mt-2">
-        <div class="column col-sm-3">
-            {% include plots/hist_revs_cmu.html %}
-        </div>
-        <div class="column col-sm-3">
-            {% include plots/hist_revs.html %}
-        </div>
-        <div class="column col-sm-3">
-            {% include plots/hist_movs_cmu.html %}
-        </div>
-        <div class="column col-sm-3">
-            {% include plots/hist_movs.html %}
-        </div>
+    <div class="row justify-content-around">
+        {% include plots/linreg.html %}
+        {% include plots/perc_main_characters.html %}
     </div>
-</div>
+        
+    </div>
+    <div class="comparison-img row justify-content-around">
+        <p >In a 40-year period, between 1970 and 2011, we clearly see that there are more and more feminine main characters
+             in proportion and that there are logically less masculine main characters: it is a real gap diminution on the studied time-lapse. 
+             This is a very important result, as we know that female role models (for example, under the embodiment of movie main characters)
+             are key to accelerating gender equality!
+            
+    </div>  
 <style>
     .img-card{
         width:100%;
