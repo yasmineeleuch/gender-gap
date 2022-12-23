@@ -1,0 +1,36 @@
+title: "How on-screen emotions make money?"
+baseurl: "/gender-gap"
+favicon: "assets/images/Venus_symbol.png"
+
+author: CYGA
+locale: en_us
+lang: en_us
+markdown: kramdown
+kramdown:
+  syntax_highlighter_opts:
+    disable: true
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+# Authors
+authors:
+  sal:
+    name: Ondin
+    display_name: Ondin
+    avatar: "assets/images/ondin.png"
+    email: kafkaon1@gmail.com
+    github: https://github.com/ondin
+    description: "Usak."
+  john:
+    name: Ondin
+    display_name: Ondin
+    avatar: "assets/images/ondin.png"
+    email: kafkaon1@gmail.com
+    github: https://github.com/ondin
+    description: "Usak."
+
+# Plugins
+plugins:
+  - jekyll-archives
+

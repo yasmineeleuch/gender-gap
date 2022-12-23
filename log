@@ -1,0 +1,498 @@
+/Library/Ruby/Gems/2.6.0/gems/ffi-1.15.5/lib/ffi/library.rb:275: [BUG] Bus Error at 0x000000010478c000
+ruby 2.6.8p205 (2021-07-07 revision 67951) [universal.arm64e-darwin21]
+
+-- Crash Report log information --------------------------------------------
+   See Crash Report log file under the one of following:
+     * ~/Library/Logs/DiagnosticReports
+     * /Library/Logs/DiagnosticReports
+   for more details.
+Don't forget to include the above Crash Report log file in bug reports.
+
+-- Control frame information -----------------------------------------------
+c:0027 p:---- s:0156 e:000155 CFUNC  :attach
+c:0026 p:0258 s:0150 e:000149 METHOD /Library/Ruby/Gems/2.6.0/gems/ffi-1.15.5/lib/ffi/library.rb:275
+c:0025 p:0023 s:0130 e:000129 METHOD /Library/Ruby/Gems/2.6.0/gems/sassc-2.4.0/lib/sassc/native.rb:40
+c:0024 p:0012 s:0125 e:000124 CLASS  /Library/Ruby/Gems/2.6.0/gems/sassc-2.4.0/lib/sassc/native/native_context_api.rb:5
+c:0023 p:0007 s:0122 e:000121 CLASS  /Library/Ruby/Gems/2.6.0/gems/sassc-2.4.0/lib/sassc/native/native_context_api.rb:4
+c:0022 p:0007 s:0119 e:000118 TOP    /Library/Ruby/Gems/2.6.0/gems/sassc-2.4.0/lib/sassc/native/native_context_api.rb:3 [FINISH]
+c:0021 p:---- s:0116 e:000115 CFUNC  :require_relative
+c:0020 p:0247 s:0111 e:000110 CLASS  /Library/Ruby/Gems/2.6.0/gems/sassc-2.4.0/lib/sassc/native.rb:60
+c:0019 p:0007 s:0107 e:000106 CLASS  /Library/Ruby/Gems/2.6.0/gems/sassc-2.4.0/lib/sassc/native.rb:6
+c:0018 p:0014 s:0104 e:000103 TOP    /Library/Ruby/Gems/2.6.0/gems/sassc-2.4.0/lib/sassc/native.rb:5 [FINISH]
+c:0017 p:---- s:0101 e:000100 CFUNC  :require_relative
+c:0016 p:0021 s:0096 e:000095 TOP    /Library/Ruby/Gems/2.6.0/gems/sassc-2.4.0/lib/sassc.rb:31 [FINISH]
+c:0015 p:---- s:0093 e:000092 CFUNC  :require
+c:0014 p:0110 s:0088 e:000087 METHOD /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54
+c:0013 p:0006 s:0076 e:000075 TOP    /Library/Ruby/Gems/2.6.0/gems/jekyll-sass-converter-2.2.0/lib/jekyll/converters/scss.rb:3 [FINISH]
+c:0012 p:---- s:0073 e:000072 CFUNC  :require
+c:0011 p:0110 s:0068 e:000067 METHOD /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54
+c:0010 p:0013 s:0056 e:000055 TOP    /Library/Ruby/Gems/2.6.0/gems/jekyll-sass-converter-2.2.0/lib/jekyll-sass-converter.rb:4 [FINISH]
+c:0009 p:---- s:0053 e:000052 CFUNC  :require
+c:0008 p:0110 s:0048 e:000047 METHOD /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54
+c:0007 p:0226 s:0036 e:000035 TOP    /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll.rb:195 [FINISH]
+c:0006 p:---- s:0033 e:000032 CFUNC  :require
+c:0005 p:0110 s:0028 e:000027 METHOD /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54
+c:0004 p:0041 s:0016 e:000015 TOP    /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/exe/jekyll:8 [FINISH]
+c:0003 p:---- s:0013 e:000012 CFUNC  :load
+c:0002 p:0109 s:0008 E:000ad0 EVAL   /usr/local/bin/jekyll:23 [FINISH]
+c:0001 p:0000 s:0003 E:002120 (none) [FINISH]
+
+-- Ruby level backtrace information ----------------------------------------
+/usr/local/bin/jekyll:23:in `<main>'
+/usr/local/bin/jekyll:23:in `load'
+/Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/exe/jekyll:8:in `<top (required)>'
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+/Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll.rb:195:in `<top (required)>'
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+/Library/Ruby/Gems/2.6.0/gems/jekyll-sass-converter-2.2.0/lib/jekyll-sass-converter.rb:4:in `<top (required)>'
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+/Library/Ruby/Gems/2.6.0/gems/jekyll-sass-converter-2.2.0/lib/jekyll/converters/scss.rb:3:in `<top (required)>'
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+/Library/Ruby/Gems/2.6.0/gems/sassc-2.4.0/lib/sassc.rb:31:in `<top (required)>'
+/Library/Ruby/Gems/2.6.0/gems/sassc-2.4.0/lib/sassc.rb:31:in `require_relative'
+/Library/Ruby/Gems/2.6.0/gems/sassc-2.4.0/lib/sassc/native.rb:5:in `<top (required)>'
+/Library/Ruby/Gems/2.6.0/gems/sassc-2.4.0/lib/sassc/native.rb:6:in `<module:SassC>'
+/Library/Ruby/Gems/2.6.0/gems/sassc-2.4.0/lib/sassc/native.rb:60:in `<module:Native>'
+/Library/Ruby/Gems/2.6.0/gems/sassc-2.4.0/lib/sassc/native.rb:60:in `require_relative'
+/Library/Ruby/Gems/2.6.0/gems/sassc-2.4.0/lib/sassc/native/native_context_api.rb:3:in `<top (required)>'
+/Library/Ruby/Gems/2.6.0/gems/sassc-2.4.0/lib/sassc/native/native_context_api.rb:4:in `<module:SassC>'
+/Library/Ruby/Gems/2.6.0/gems/sassc-2.4.0/lib/sassc/native/native_context_api.rb:5:in `<module:Native>'
+/Library/Ruby/Gems/2.6.0/gems/sassc-2.4.0/lib/sassc/native.rb:40:in `attach_function'
+/Library/Ruby/Gems/2.6.0/gems/ffi-1.15.5/lib/ffi/library.rb:275:in `attach_function'
+/Library/Ruby/Gems/2.6.0/gems/ffi-1.15.5/lib/ffi/library.rb:275:in `attach'
+
+-- Other runtime information -----------------------------------------------
+
+* Loaded script: /usr/local/bin/jekyll
+
+* Loaded features:
+
+    0 enumerator.so
+    1 thread.rb
+    2 rational.so
+    3 complex.so
+    4 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/universal-darwin21/enc/encdb.bundle
+    5 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/universal-darwin21/enc/trans/transdb.bundle
+    6 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/universal-darwin21/rbconfig.rb
+    7 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/compatibility.rb
+    8 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/defaults.rb
+    9 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/deprecate.rb
+   10 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/errors.rb
+   11 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/version.rb
+   12 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/requirement.rb
+   13 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/platform.rb
+   14 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/basic_specification.rb
+   15 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/stub_specification.rb
+   16 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/delegate.rb
+   17 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/uri/rfc2396_parser.rb
+   18 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/uri/rfc3986_parser.rb
+   19 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/uri/common.rb
+   20 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/uri/generic.rb
+   21 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/uri/file.rb
+   22 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/uri/ftp.rb
+   23 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/uri/http.rb
+   24 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/uri/https.rb
+   25 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/uri/ldap.rb
+   26 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/uri/ldaps.rb
+   27 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/uri/mailto.rb
+   28 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/uri.rb
+   29 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/specification_policy.rb
+   30 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/util/list.rb
+   31 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/universal-darwin21/stringio.bundle
+   32 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/specification.rb
+   33 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/exceptions.rb
+   34 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/util.rb
+   35 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/bundler_version_finder.rb
+   36 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/dependency.rb
+   37 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/core_ext/kernel_gem.rb
+   38 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/monitor.rb
+   39 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb
+   40 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/core_ext/kernel_warn.rb
+   41 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems.rb
+   42 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/path_support.rb
+   43 /Library/Ruby/Gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/version.rb
+   44 /Library/Ruby/Gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb
+   45 /Library/Ruby/Gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/levenshtein.rb
+   46 /Library/Ruby/Gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/jaro_winkler.rb
+   47 /Library/Ruby/Gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/spell_checker.rb
+   48 /Library/Ruby/Gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/spell_checkers/name_error_checkers/class_name_checker.rb
+   49 /Library/Ruby/Gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/spell_checkers/name_error_checkers/variable_name_checker.rb
+   50 /Library/Ruby/Gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/spell_checkers/name_error_checkers.rb
+   51 /Library/Ruby/Gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/spell_checkers/method_name_checker.rb
+   52 /Library/Ruby/Gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/spell_checkers/key_error_checker.rb
+   53 /Library/Ruby/Gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/spell_checkers/null_checker.rb
+   54 /Library/Ruby/Gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/formatters/plain_formatter.rb
+   55 /Library/Ruby/Gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean.rb
+   56 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/tsort.rb
+   57 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/request_set/gem_dependency_api.rb
+   58 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/request_set/lockfile/parser.rb
+   59 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/request_set/lockfile/tokenizer.rb
+   60 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/request_set/lockfile.rb
+   61 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/request_set.rb
+   62 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/molinillo/lib/molinillo/gem_metadata.rb
+   63 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/molinillo/lib/molinillo/errors.rb
+   64 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/set.rb
+   65 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/molinillo/lib/molinillo/dependency_graph/action.rb
+   66 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/molinillo/lib/molinillo/dependency_graph/add_edge_no_circular.rb
+   67 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/molinillo/lib/molinillo/dependency_graph/add_vertex.rb
+   68 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/molinillo/lib/molinillo/dependency_graph/delete_edge.rb
+   69 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/molinillo/lib/molinillo/dependency_graph/detach_vertex_named.rb
+   70 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/molinillo/lib/molinillo/dependency_graph/set_payload.rb
+   71 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/molinillo/lib/molinillo/dependency_graph/tag.rb
+   72 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/molinillo/lib/molinillo/dependency_graph/log.rb
+   73 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/molinillo/lib/molinillo/dependency_graph/vertex.rb
+   74 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/molinillo/lib/molinillo/dependency_graph.rb
+   75 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/molinillo/lib/molinillo/state.rb
+   76 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/molinillo/lib/molinillo/modules/specification_provider.rb
+   77 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/molinillo/lib/molinillo/delegates/resolution_state.rb
+   78 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/molinillo/lib/molinillo/delegates/specification_provider.rb
+   79 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/molinillo/lib/molinillo/resolution.rb
+   80 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/molinillo/lib/molinillo/resolver.rb
+   81 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/molinillo/lib/molinillo/modules/ui.rb
+   82 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/molinillo/lib/molinillo.rb
+   83 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/molinillo.rb
+   84 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/activation_request.rb
+   85 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/conflict.rb
+   86 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/dependency_request.rb
+   87 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/requirement_list.rb
+   88 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/stats.rb
+   89 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/set.rb
+   90 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/api_set.rb
+   91 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/composed_set.rb
+   92 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/best_set.rb
+   93 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/current_set.rb
+   94 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/git_set.rb
+   95 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/index_set.rb
+   96 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/installer_set.rb
+   97 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/lock_set.rb
+   98 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/vendor_set.rb
+   99 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/source_set.rb
+  100 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/specification.rb
+  101 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/spec_specification.rb
+  102 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/api_specification.rb
+  103 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/git_specification.rb
+  104 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/index_specification.rb
+  105 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/installed_specification.rb
+  106 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/local_specification.rb
+  107 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/lock_specification.rb
+  108 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver/vendor_specification.rb
+  109 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/resolver.rb
+  110 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/source/git.rb
+  111 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/source/installed.rb
+  112 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/source/specific_file.rb
+  113 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/source/local.rb
+  114 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/source/lock.rb
+  115 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/source/vendor.rb
+  116 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/source.rb
+  117 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/forwardable/impl.rb
+  118 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/forwardable.rb
+  119 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/fileutils/version.rb
+  120 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/universal-darwin21/etc.bundle
+  121 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/fileutils.rb
+  122 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/universal-darwin21/date_core.bundle
+  123 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/date.rb
+  124 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/time.rb
+  125 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/English.rb
+  126 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/universal-darwin21/pathname.bundle
+  127 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/pathname.rb
+  128 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/logger.rb
+  129 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/csv/fields_converter.rb
+  130 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/csv/match_p.rb
+  131 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/universal-darwin21/strscan.bundle
+  132 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/csv/delete_suffix.rb
+  133 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/csv/row.rb
+  134 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/csv/table.rb
+  135 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/csv/parser.rb
+  136 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/csv/writer.rb
+  137 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/csv/version.rb
+  138 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/csv/core_ext/array.rb
+  139 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/csv/core_ext/string.rb
+  140 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/csv.rb
+  141 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/json/version.rb
+  142 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/ostruct.rb
+  143 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/json/generic_object.rb
+  144 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/json/common.rb
+  145 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/universal-darwin21/json/ext/parser.bundle
+  146 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/universal-darwin21/json/ext/generator.bundle
+  147 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/json/ext.rb
+  148 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/json.rb
+  149 /Library/Ruby/Gems/2.6.0/gems/pathutil-0.16.2/lib/pathutil/helpers.rb
+  150 /Library/Ruby/Gems/2.6.0/gems/forwardable-extended-2.6.0/lib/forwardable/extended/version.rb
+  151 /Library/Ruby/Gems/2.6.0/gems/forwardable-extended-2.6.0/lib/forwardable/extended.rb
+  152 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/find.rb
+  153 /Library/Ruby/Gems/2.6.0/gems/pathutil-0.16.2/lib/pathutil.rb
+  154 /Library/Ruby/Gems/2.6.0/gems/addressable-2.8.1/lib/addressable/version.rb
+  155 /Library/Ruby/Gems/2.6.0/gems/addressable-2.8.1/lib/addressable/idna/pure.rb
+  156 /Library/Ruby/Gems/2.6.0/gems/addressable-2.8.1/lib/addressable/idna.rb
+  157 /Library/Ruby/Gems/2.6.0/gems/public_suffix-5.0.1/lib/public_suffix/domain.rb
+  158 /Library/Ruby/Gems/2.6.0/gems/public_suffix-5.0.1/lib/public_suffix/version.rb
+  159 /Library/Ruby/Gems/2.6.0/gems/public_suffix-5.0.1/lib/public_suffix/errors.rb
+  160 /Library/Ruby/Gems/2.6.0/gems/public_suffix-5.0.1/lib/public_suffix/rule.rb
+  161 /Library/Ruby/Gems/2.6.0/gems/public_suffix-5.0.1/lib/public_suffix/list.rb
+  162 /Library/Ruby/Gems/2.6.0/gems/public_suffix-5.0.1/lib/public_suffix.rb
+  163 /Library/Ruby/Gems/2.6.0/gems/addressable-2.8.1/lib/addressable/uri.rb
+  164 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/psych/versions.rb
+  165 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/psych/exception.rb
+  166 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/psych/syntax_error.rb
+  167 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/universal-darwin21/psych.bundle
+  168 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/psych/omap.rb
+  169 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/psych/set.rb
+  170 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/psych/class_loader.rb
+  171 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/psych/scalar_scanner.rb
+  172 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/psych/nodes/node.rb
+  173 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/psych/nodes/stream.rb
+  174 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/psych/nodes/document.rb
+  175 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/psych/nodes/sequence.rb
+  176 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/psych/nodes/scalar.rb
+  177 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/psych/nodes/mapping.rb
+  178 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/psych/nodes/alias.rb
+  179 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/psych/nodes.rb
+  180 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/psych/streaming.rb
+  181 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/psych/visitors/visitor.rb
+  182 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/psych/visitors/to_ruby.rb
+  183 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/psych/visitors/emitter.rb
+  184 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/psych/handler.rb
+  185 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/psych/tree_builder.rb
+  186 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/psych/visitors/yaml_tree.rb
+  187 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/psych/json/ruby_events.rb
+  188 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/psych/visitors/json_tree.rb
+  189 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/psych/visitors/depth_first.rb
+  190 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/psych/visitors.rb
+  191 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/psych/parser.rb
+  192 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/psych/coder.rb
+  193 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/psych/core_ext.rb
+  194 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/psych/stream.rb
+  195 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/psych/json/yaml_events.rb
+  196 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/psych/json/tree_builder.rb
+  197 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/psych/json/stream.rb
+  198 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/psych/handlers/document_stream.rb
+  199 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/psych.rb
+  200 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/yaml.rb
+  201 /Library/Ruby/Gems/2.6.0/gems/safe_yaml-1.0.5/lib/safe_yaml/libyaml_checker.rb
+  202 /Library/Ruby/Gems/2.6.0/gems/safe_yaml-1.0.5/lib/safe_yaml/deep.rb
+  203 /Library/Ruby/Gems/2.6.0/gems/safe_yaml-1.0.5/lib/safe_yaml/parse/hexadecimal.rb
+  204 /Library/Ruby/Gems/2.6.0/gems/safe_yaml-1.0.5/lib/safe_yaml/parse/sexagesimal.rb
+  205 /Library/Ruby/Gems/2.6.0/gems/safe_yaml-1.0.5/lib/safe_yaml/parse/date.rb
+  206 /Library/Ruby/Gems/2.6.0/gems/safe_yaml-1.0.5/lib/safe_yaml/transform/transformation_map.rb
+  207 /Library/Ruby/Gems/2.6.0/gems/safe_yaml-1.0.5/lib/safe_yaml/transform/to_boolean.rb
+  208 /Library/Ruby/Gems/2.6.0/gems/safe_yaml-1.0.5/lib/safe_yaml/transform/to_date.rb
+  209 /Library/Ruby/Gems/2.6.0/gems/safe_yaml-1.0.5/lib/safe_yaml/transform/to_float.rb
+  210 /Library/Ruby/Gems/2.6.0/gems/safe_yaml-1.0.5/lib/safe_yaml/transform/to_integer.rb
+  211 /Library/Ruby/Gems/2.6.0/gems/safe_yaml-1.0.5/lib/safe_yaml/transform/to_nil.rb
+  212 /Library/Ruby/Gems/2.6.0/gems/safe_yaml-1.0.5/lib/safe_yaml/transform/to_symbol.rb
+  213 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/base64.rb
+  214 /Library/Ruby/Gems/2.6.0/gems/safe_yaml-1.0.5/lib/safe_yaml/transform.rb
+  215 /Library/Ruby/Gems/2.6.0/gems/safe_yaml-1.0.5/lib/safe_yaml/resolver.rb
+  216 /Library/Ruby/Gems/2.6.0/gems/safe_yaml-1.0.5/lib/safe_yaml/psych_handler.rb
+  217 /Library/Ruby/Gems/2.6.0/gems/safe_yaml-1.0.5/lib/safe_yaml/psych_resolver.rb
+  218 /Library/Ruby/Gems/2.6.0/gems/safe_yaml-1.0.5/lib/safe_yaml/safe_to_ruby_visitor.rb
+  219 /Library/Ruby/Gems/2.6.0/gems/safe_yaml-1.0.5/lib/safe_yaml/load.rb
+  220 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/version.rb
+  221 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/parse_tree_visitor.rb
+  222 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/lexer.rb
+  223 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/parser.rb
+  224 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/i18n.rb
+  225 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/drop.rb
+  226 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/tablerowloop_drop.rb
+  227 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/forloop_drop.rb
+  228 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/extensions.rb
+  229 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/errors.rb
+  230 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/interrupts.rb
+  231 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/strainer.rb
+  232 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/expression.rb
+  233 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/context.rb
+  234 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/parser_switching.rb
+  235 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/tag.rb
+  236 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/block.rb
+  237 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/block_body.rb
+  238 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/document.rb
+  239 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/variable.rb
+  240 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/variable_lookup.rb
+  241 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/range_lookup.rb
+  242 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/file_system.rb
+  243 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/resource_limits.rb
+  244 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/template.rb
+  245 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/cgi/core.rb
+  246 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/universal-darwin21/cgi/escape.bundle
+  247 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/cgi/util.rb
+  248 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/cgi/cookie.rb
+  249 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/cgi.rb
+  250 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/universal-darwin21/bigdecimal.bundle
+  251 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/bigdecimal.rb
+  252 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/standardfilters.rb
+  253 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/condition.rb
+  254 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/utils.rb
+  255 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/tokenizer.rb
+  256 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/parse_context.rb
+  257 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/tags/table_row.rb
+  258 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/tags/if.rb
+  259 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/tags/break.rb
+  260 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/tags/for.rb
+  261 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/tags/assign.rb
+  262 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/tags/ifchanged.rb
+  263 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/tags/case.rb
+  264 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/tags/include.rb
+  265 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/tags/continue.rb
+  266 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/tags/capture.rb
+  267 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/tags/decrement.rb
+  268 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/tags/unless.rb
+  269 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/tags/increment.rb
+  270 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/tags/comment.rb
+  271 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/tags/raw.rb
+  272 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid/tags/cycle.rb
+  273 /Library/Ruby/Gems/2.6.0/gems/liquid-4.0.3/lib/liquid.rb
+  274 /Library/Ruby/Gems/2.6.0/gems/kramdown-2.4.0/lib/kramdown/version.rb
+  275 /Library/Ruby/Gems/2.6.0/gems/kramdown-2.4.0/lib/kramdown/element.rb
+  276 /Library/Ruby/Gems/2.6.0/gems/kramdown-2.4.0/lib/kramdown/error.rb
+  277 /Library/Ruby/Gems/2.6.0/gems/kramdown-2.4.0/lib/kramdown/parser.rb
+  278 /Library/Ruby/Gems/2.6.0/gems/kramdown-2.4.0/lib/kramdown/utils.rb
+  279 /Library/Ruby/Gems/2.6.0/gems/kramdown-2.4.0/lib/kramdown/utils/configurable.rb
+  280 /Library/Ruby/Gems/2.6.0/gems/kramdown-2.4.0/lib/kramdown/converter.rb
+  281 /Library/Ruby/Gems/2.6.0/gems/kramdown-2.4.0/lib/kramdown/options.rb
+  282 /Library/Ruby/Gems/2.6.0/gems/kramdown-2.4.0/lib/kramdown/document.rb
+  283 /Library/Ruby/Gems/2.6.0/gems/kramdown-2.4.0/lib/kramdown.rb
+  284 /Library/Ruby/Gems/2.6.0/gems/colorator-1.1.0/lib/colorator/core_ext.rb
+  285 /Library/Ruby/Gems/2.6.0/gems/colorator-1.1.0/lib/colorator.rb
+  286 /Library/Ruby/Gems/2.6.0/gems/concurrent-ruby-1.1.10/lib/concurrent-ruby/concurrent/constants.rb
+  287 /Library/Ruby/Gems/2.6.0/gems/concurrent-ruby-1.1.10/lib/concurrent-ruby/concurrent/utility/engine.rb
+  288 /Library/Ruby/Gems/2.6.0/gems/concurrent-ruby-1.1.10/lib/concurrent-ruby/concurrent/synchronization/abstract_object.rb
+  289 /Library/Ruby/Gems/2.6.0/gems/concurrent-ruby-1.1.10/lib/concurrent-ruby/concurrent/utility/native_extension_loader.rb
+  290 /Library/Ruby/Gems/2.6.0/gems/concurrent-ruby-1.1.10/lib/concurrent-ruby/concurrent/synchronization/mri_object.rb
+  291 /Library/Ruby/Gems/2.6.0/gems/concurrent-ruby-1.1.10/lib/concurrent-ruby/concurrent/synchronization/jruby_object.rb
+  292 /Library/Ruby/Gems/2.6.0/gems/concurrent-ruby-1.1.10/lib/concurrent-ruby/concurrent/synchronization/rbx_object.rb
+  293 /Library/Ruby/Gems/2.6.0/gems/concurrent-ruby-1.1.10/lib/concurrent-ruby/concurrent/synchronization/truffleruby_object.rb
+  294 /Library/Ruby/Gems/2.6.0/gems/concurrent-ruby-1.1.10/lib/concurrent-ruby/concurrent/synchronization/object.rb
+  295 /Library/Ruby/Gems/2.6.0/gems/concurrent-ruby-1.1.10/lib/concurrent-ruby/concurrent/synchronization/volatile.rb
+  296 /Library/Ruby/Gems/2.6.0/gems/concurrent-ruby-1.1.10/lib/concurrent-ruby/concurrent/synchronization/abstract_lockable_object.rb
+  297 /Library/Ruby/Gems/2.6.0/gems/concurrent-ruby-1.1.10/lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb
+  298 /Library/Ruby/Gems/2.6.0/gems/concurrent-ruby-1.1.10/lib/concurrent-ruby/concurrent/synchronization/jruby_lockable_object.rb
+  299 /Library/Ruby/Gems/2.6.0/gems/concurrent-ruby-1.1.10/lib/concurrent-ruby/concurrent/synchronization/rbx_lockable_object.rb
+  300 /Library/Ruby/Gems/2.6.0/gems/concurrent-ruby-1.1.10/lib/concurrent-ruby/concurrent/synchronization/lockable_object.rb
+  301 /Library/Ruby/Gems/2.6.0/gems/concurrent-ruby-1.1.10/lib/concurrent-ruby/concurrent/synchronization/condition.rb
+  302 /Library/Ruby/Gems/2.6.0/gems/concurrent-ruby-1.1.10/lib/concurrent-ruby/concurrent/synchronization/lock.rb
+  303 /Library/Ruby/Gems/2.6.0/gems/concurrent-ruby-1.1.10/lib/concurrent-ruby/concurrent/synchronization.rb
+  304 /Library/Ruby/Gems/2.6.0/gems/concurrent-ruby-1.1.10/lib/concurrent-ruby/concurrent/collection/map/non_concurrent_map_backend.rb
+  305 /Library/Ruby/Gems/2.6.0/gems/concurrent-ruby-1.1.10/lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb
+  306 /Library/Ruby/Gems/2.6.0/gems/concurrent-ruby-1.1.10/lib/concurrent-ruby/concurrent/map.rb
+  307 /Library/Ruby/Gems/2.6.0/gems/concurrent-ruby-1.1.10/lib/concurrent-ruby/concurrent/thread_safe/util.rb
+  308 /Library/Ruby/Gems/2.6.0/gems/concurrent-ruby-1.1.10/lib/concurrent-ruby/concurrent/hash.rb
+  309 /Library/Ruby/Gems/2.6.0/gems/i18n-1.12.0/lib/i18n/version.rb
+  310 /Library/Ruby/Gems/2.6.0/gems/i18n-1.12.0/lib/i18n/utils.rb
+  311 /Library/Ruby/Gems/2.6.0/gems/i18n-1.12.0/lib/i18n/exceptions.rb
+  312 /Library/Ruby/Gems/2.6.0/gems/i18n-1.12.0/lib/i18n/interpolate/ruby.rb
+  313 /Library/Ruby/Gems/2.6.0/gems/i18n-1.12.0/lib/i18n.rb
+  314 /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll/plugin.rb
+  315 /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll/converter.rb
+  316 /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll/generator.rb
+  317 /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll/command.rb
+  318 /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll/liquid_extensions.rb
+  319 /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll/filters/date_filters.rb
+  320 /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll/filters/grouping_filters.rb
+  321 /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll/filters/url_filters.rb
+  322 /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll/filters.rb
+  323 /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll/external.rb
+  324 /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll/log_adapter.rb
+  325 /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll/stevenson.rb
+  326 /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll/drops/drop.rb
+  327 /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll/drops/document_drop.rb
+  328 /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll/commands/build.rb
+  329 /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll/commands/clean.rb
+  330 /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll/commands/doctor.rb
+  331 /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll/commands/help.rb
+  332 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/erb.rb
+  333 /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll/commands/new.rb
+  334 /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll/commands/new_theme.rb
+  335 /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll/commands/serve.rb
+  336 /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll/converters/identity.rb
+  337 /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll/converters/markdown.rb
+  338 /Library/Ruby/Gems/2.6.0/gems/kramdown-2.4.0/lib/kramdown/parser/base.rb
+  339 /Library/Ruby/Gems/2.6.0/gems/kramdown-2.4.0/lib/kramdown/parser/kramdown/blank_line.rb
+  340 /Library/Ruby/Gems/2.6.0/gems/kramdown-2.4.0/lib/kramdown/parser/kramdown/eob.rb
+  341 /Library/Ruby/Gems/2.6.0/gems/kramdown-2.4.0/lib/kramdown/parser/kramdown/extensions.rb
+  342 /Library/Ruby/Gems/2.6.0/gems/kramdown-2.4.0/lib/kramdown/parser/kramdown/horizontal_rule.rb
+  343 /Library/Ruby/Gems/2.6.0/gems/kramdown-2.4.0/lib/kramdown/parser/kramdown/list.rb
+  344 /Library/Ruby/Gems/2.6.0/gems/rexml-3.2.5/lib/rexml/parseexception.rb
+  345 /Library/Ruby/Gems/2.6.0/gems/rexml-3.2.5/lib/rexml/undefinednamespaceexception.rb
+  346 /Library/Ruby/Gems/2.6.0/gems/rexml-3.2.5/lib/rexml/encoding.rb
+  347 /Library/Ruby/Gems/2.6.0/gems/rexml-3.2.5/lib/rexml/source.rb
+  348 /Library/Ruby/Gems/2.6.0/gems/rexml-3.2.5/lib/rexml/parsers/baseparser.rb
+  349 /Library/Ruby/Gems/2.6.0/gems/kramdown-2.4.0/lib/kramdown/utils/entities.rb
+  350 /Library/Ruby/Gems/2.6.0/gems/kramdown-2.4.0/lib/kramdown/parser/html.rb
+  351 /Library/Ruby/Gems/2.6.0/gems/kramdown-2.4.0/lib/kramdown/parser/kramdown/html.rb
+  352 /Library/Ruby/Gems/2.6.0/gems/kramdown-2.4.0/lib/kramdown/parser/kramdown/paragraph.rb
+  353 /Library/Ruby/Gems/2.6.0/gems/kramdown-2.4.0/lib/kramdown/parser/kramdown/block_boundary.rb
+  354 /Library/Ruby/Gems/2.6.0/gems/rexml-3.2.5/lib/rexml/xmltokens.rb
+  355 /Library/Ruby/Gems/2.6.0/gems/kramdown-2.4.0/lib/kramdown/parser/kramdown/header.rb
+  356 /Library/Ruby/Gems/2.6.0/gems/kramdown-2.4.0/lib/kramdown/parser/kramdown/blockquote.rb
+  357 /Library/Ruby/Gems/2.6.0/gems/kramdown-2.4.0/lib/kramdown/parser/kramdown/table.rb
+  358 /Library/Ruby/Gems/2.6.0/gems/kramdown-2.4.0/lib/kramdown/parser/kramdown/codeblock.rb
+  359 /Library/Ruby/Gems/2.6.0/gems/kramdown-2.4.0/lib/kramdown/parser/kramdown/escaped_chars.rb
+  360 /Library/Ruby/Gems/2.6.0/gems/kramdown-2.4.0/lib/kramdown/parser/kramdown/link.rb
+  361 /Library/Ruby/Gems/2.6.0/gems/kramdown-2.4.0/lib/kramdown/parser/kramdown/footnote.rb
+  362 /Library/Ruby/Gems/2.6.0/gems/kramdown-2.4.0/lib/kramdown/parser/kramdown/html_entity.rb
+  363 /Library/Ruby/Gems/2.6.0/gems/kramdown-2.4.0/lib/kramdown/parser/kramdown/line_break.rb
+  364 /Library/Ruby/Gems/2.6.0/gems/kramdown-2.4.0/lib/kramdown/parser/kramdown/typographic_symbol.rb
+  365 /Library/Ruby/Gems/2.6.0/gems/kramdown-2.4.0/lib/kramdown/parser/kramdown/autolink.rb
+  366 /Library/Ruby/Gems/2.6.0/gems/kramdown-2.4.0/lib/kramdown/parser/kramdown/codespan.rb
+  367 /Library/Ruby/Gems/2.6.0/gems/kramdown-2.4.0/lib/kramdown/parser/kramdown/emphasis.rb
+  368 /Library/Ruby/Gems/2.6.0/gems/kramdown-2.4.0/lib/kramdown/parser/kramdown/smart_quotes.rb
+  369 /Library/Ruby/Gems/2.6.0/gems/kramdown-2.4.0/lib/kramdown/parser/kramdown/math.rb
+  370 /Library/Ruby/Gems/2.6.0/gems/kramdown-2.4.0/lib/kramdown/parser/kramdown/abbreviation.rb
+  371 /Library/Ruby/Gems/2.6.0/gems/kramdown-2.4.0/lib/kramdown/parser/kramdown.rb
+  372 /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll/converters/smartypants.rb
+  373 /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll/converters/markdown/kramdown_parser.rb
+  374 /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll/drops/collection_drop.rb
+  375 /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll/drops/excerpt_drop.rb
+  376 /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll/drops/jekyll_drop.rb
+  377 /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll/drops/site_drop.rb
+  378 /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll/drops/static_file_drop.rb
+  379 /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll/drops/theme_drop.rb
+  380 /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll/drops/unified_payload_drop.rb
+  381 /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll/drops/url_drop.rb
+  382 /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll/tags/highlight.rb
+  383 /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll/tags/include.rb
+  384 /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll/tags/link.rb
+  385 /Library/Ruby/Gems/2.6.0/gems/jekyll-4.3.1/lib/jekyll/tags/post_url.rb
+  386 /Library/Ruby/Gems/2.6.0/gems/jekyll-sass-converter-2.2.0/lib/jekyll-sass-converter/version.rb
+  387 /Library/Ruby/Gems/2.6.0/gems/sassc-2.4.0/lib/sassc/version.rb
+  388 /Library/Ruby/Gems/2.6.0/gems/ffi-1.15.5/lib/ffi_c.bundle
+  389 /Library/Ruby/Gems/2.6.0/gems/ffi-1.15.5/lib/ffi/platform.rb
+  390 /Library/Ruby/Gems/2.6.0/gems/ffi-1.15.5/lib/ffi/data_converter.rb
+  391 /Library/Ruby/Gems/2.6.0/gems/ffi-1.15.5/lib/ffi/types.rb
+  392 /Library/Ruby/Gems/2.6.0/gems/ffi-1.15.5/lib/ffi/library.rb
+  393 /Library/Ruby/Gems/2.6.0/gems/ffi-1.15.5/lib/ffi/errno.rb
+  394 /Library/Ruby/Gems/2.6.0/gems/ffi-1.15.5/lib/ffi/abstract_memory.rb
+  395 /Library/Ruby/Gems/2.6.0/gems/ffi-1.15.5/lib/ffi/pointer.rb
+  396 /Library/Ruby/Gems/2.6.0/gems/ffi-1.15.5/lib/ffi/memorypointer.rb
+  397 /Library/Ruby/Gems/2.6.0/gems/ffi-1.15.5/lib/ffi/struct_layout.rb
+  398 /Library/Ruby/Gems/2.6.0/gems/ffi-1.15.5/lib/ffi/struct_layout_builder.rb
+  399 /Library/Ruby/Gems/2.6.0/gems/ffi-1.15.5/lib/ffi/struct_by_reference.rb
+  400 /Library/Ruby/Gems/2.6.0/gems/ffi-1.15.5/lib/ffi/struct.rb
+  401 /Library/Ruby/Gems/2.6.0/gems/ffi-1.15.5/lib/ffi/union.rb
+  402 /Library/Ruby/Gems/2.6.0/gems/ffi-1.15.5/lib/ffi/managedstruct.rb
+  403 /Library/Ruby/Gems/2.6.0/gems/ffi-1.15.5/lib/ffi/callback.rb
+  404 /Library/Ruby/Gems/2.6.0/gems/ffi-1.15.5/lib/ffi/io.rb
+  405 /Library/Ruby/Gems/2.6.0/gems/ffi-1.15.5/lib/ffi/autopointer.rb
+  406 /Library/Ruby/Gems/2.6.0/gems/ffi-1.15.5/lib/ffi/variadic.rb
+  407 /Library/Ruby/Gems/2.6.0/gems/ffi-1.15.5/lib/ffi/enum.rb
+  408 /Library/Ruby/Gems/2.6.0/gems/ffi-1.15.5/lib/ffi/version.rb
+  409 /Library/Ruby/Gems/2.6.0/gems/ffi-1.15.5/lib/ffi/ffi.rb
+  410 /Library/Ruby/Gems/2.6.0/gems/ffi-1.15.5/lib/ffi.rb
+  411 /Library/Ruby/Gems/2.6.0/gems/sassc-2.4.0/lib/sassc/native/sass_value.rb
+  412 /Library/Ruby/Gems/2.6.0/gems/sassc-2.4.0/lib/sassc/native/sass_input_style.rb
+  413 /Library/Ruby/Gems/2.6.0/gems/sassc-2.4.0/lib/sassc/native/sass_output_style.rb
+  414 /Library/Ruby/Gems/2.6.0/gems/sassc-2.4.0/lib/sassc/native/string_list.rb
+
+[NOTE]
+You may have encountered a bug in the Ruby interpreter or extension libraries.
+Bug reports are welcome.
+For details: https://www.ruby-lang.org/bugreport.html
+
+[IMPORTANT]
+Don't forget to include the Crash Report log file under
+DiagnosticReports directory in bug reports.
+

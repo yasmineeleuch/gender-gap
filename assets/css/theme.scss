@@ -1,0 +1,218 @@
+---
+---
+
+$primary: #ffdd44 !default;
+$hero:    #FEA4CA !default;
+$main_graph: #FEA4CA;
+
+$grey: #333;
+$black: #000;
+
+$container-width: 1200px;
+$header-height: 747px;
+
+$progress-bar-height: 5px;
+
+@import 'bootstrap/bootstrap';
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+
+
+/* General css
+================================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+  
+body {
+    background:#fff;
+    font-size:17px;
+    transition: all 200ms linear;
+    font-family: "Rubik",sans-serif;
+    line-height:1.7;
+    color: $grey;
+    
+}
+
+.container{
+    max-width: $container-width;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $black;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight:600;
+}
+
+
+/* Prevent smaller devices to see the content
+================================================== */
+
+.not-supp {
+    display: none;
+    background: $hero;
+}
+
+@media (max-width: 1200px) {
+    .content {
+        display: none
+    }
+
+    .not-supp {
+        display: block
+    }
+}
+
+/* Header
+================================================== */
+
+.hero {
+    background: $hero;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    position: relative;
+    z-index: 1;
+    height:$header-height ;
+    width: 100%;
+}
+
+
+.camera-img {
+    width: 101%; // just to ensure overlap
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+  
+.header-text {
+    height: $header-height;
+    position: relative;
+    z-index: 2;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+.full-height {
+    min-height:  $header-height;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+/* Content
+========================================== */
+.report-paragraph {
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+.img-card {
+    img {
+        width: 100%;
+        
+    }
+    object {
+        width: 100%;
+    }
+    p {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 1rem;
+
+    }
+}
+
+.comparison-img {
+
+    img {
+        width: 70%;
+    }
+    p {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 1rem;
+        max-width: 70%;
+    }
+
+}
+
+.report-chapter{
+    margin-bottom: 2rem;
+}
+
+.quote {
+    padding: 3rem;
+    h3 {
+        // font-style: italic;
+        font-weight: 600;
+    }
+    div {
+        p {
+            font-size: 18px;
+            font-style: italic;
+        }
+    }
+
+
+}
+/* Sidebar == Navbar
+================================================== */
+
+.sidebar.sticky-top {
+    top:200px;
+}
+
+.sidebar {
+    font-size: 18px;
+    padding: 30px;
+    background-color: #ffde70;
+
+    ul {
+        list-style:none;
+        padding-left:0;
+        li a {
+            transition: 0.2s;
+            color: $grey;
+        }
+    }
+
+}
+
+li.active-section {
+    font-size: 25px;
+    a {
+        position: relative;
+        transition: 0.2s;
+        font-weight: 700;
+        color: $black;
+    }
+}
+
+
+/* Progress bar
+========================================== */
+
+
+.progress-bar-container {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: $progress-bar-height;
+    background: $black;
+}
+
+
+.progress-bar {
+    height: 100%;
+    background: $primary;
+    transition: 0.2s;
+    width: 0%;
+}

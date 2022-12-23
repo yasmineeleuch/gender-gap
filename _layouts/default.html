@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" href="{{ site.baseurl }}/{{site.favicon}}">
+
+<title>{{ page.title }} | {{site.title}}</title>
+<link href="{{ site.baseurl }}/assets/css/theme.css" rel="stylesheet">
+
+</head>   
+    
+<body>
+
+<div class="progress-bar-container">
+    <div class="progress-bar" id="progressBar"></div>
+</div>
+       
+<main class="content container"> 
+    {{ content }}  
+</main>
+
+{% include footer.html %}
+
+<!-- placeholder for small devices -->
+<div class="not-supp rounded m-5 p-5">
+    <h2 class="text-center">
+        This data story is intended for bigger screens, so please grab some proper device.
+    </h2>
+</div>
+
+
+<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>   
+<script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>   
+<script src="{{ site.baseurl }}/assets/js/theme.js"></script>    
+    
+</body>
+    
+</html>

@@ -1,0 +1,37 @@
+<h1 id="which">Which data have we used?</h1>
+<div div class="report-chapter">
+    <p class="report-paragraph">
+        To be able to obtain some conclusions for the cookbook, on which future directors can base their movies we need a lot of data.
+        Our analysis is based on the CMU Movie Summary Corpus. However, the amount of data has shown not to be sufficient for our purposes, 
+        as only small fraction cotains revenue data.
+        Thereofre, we decided to get more data from the internet and scraped another (and also the same :D) movies from IMDB and TMDB. 
+        This data unfortunately contain again only a small fraction of the movies with revenue data, but as the full set is bigger, the 
+        fraction is bigger as well. The revenue data are used for the analysis for the cookbook.
+        In the following figure can be seen composition of the data we used in our analysis and their respective distributions over the years.
+    </p>
+    <!-- Here is a place for data size and distribution comparison -->
+    <div class="comparison-img row justify-content-around">
+        <img src="{{site.baseurl}}/assets/images/Comparison_ds.svg" alt="Size of the industry">
+        <p >We based our analysis on 7.5k revenues data from CMU, 17k revenue data in total, 42k movie data from CMU and over 400k films scraped from the internet.</p>
+    </div>  
+    <div class="row justify-content-around mb-3 mt-2">
+        <div class="column col-sm-3">
+            {% include plots/hist_revs_cmu.html %}
+        </div>
+        <div class="column col-sm-3">
+            {% include plots/hist_revs.html %}
+        </div>
+        <div class="column col-sm-3">
+            {% include plots/hist_movs_cmu.html %}
+        </div>
+        <div class="column col-sm-3">
+            {% include plots/hist_movs.html %}
+        </div>
+    </div>
+</div>
+<style>
+    .img-card{
+        width:100%;
+        padding: 2rem;
+    }
+</style>

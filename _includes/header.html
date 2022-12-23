@@ -1,0 +1,50 @@
+<div class="full-height">
+  <div class="rounded hero">
+    <img class="venus-img" src="{{site.baseurl}}/assets/images/women.jpg">
+    <div class="row align-items-center justify-content-between header-text">
+      <div class="col-md-5"> 
+      </div>
+      <div class="col-md-5 ">
+        <h1 class="mb-4 text-center flicker_light">The evolution of the gender gap  <br> in the film industry</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .hero {
+      transform: translateY(-150%);
+      animation: slideInTop 1s forwards;
+      -moz-animation: slideInTop 1s forwards;
+      animation-delay: 1s;
+      -moz-animation-delay: 1s;
+      transform-origin: center;
+      transform-box: fill-box;
+  }
+
+  @keyframes slideInTop {
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  @-moz-keyframes slideInTop {
+    100% {
+      transform: -moz-translateX(0%);
+    }
+  }
+  .header-text h1 {
+  position: relative;
+  top: -250px;
+}
+
+  .venus-img {
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    display: block;
+  }
+</style>
+
+
+
