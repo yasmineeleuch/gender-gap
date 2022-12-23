@@ -59,6 +59,7 @@ h1, h2, h3, h4, h5, h6{
 
 @media (max-width: 1200px) {
     .content {
+        padding-top: 200px; 
         display: none
     }
 
@@ -172,18 +173,20 @@ h1, h2, h3, h4, h5, h6{
 .sidebar {
     font-size: 18px;
     padding: 30px;
-    background-color: #ffde70;
-
+    background-color: #ff70c6;
+    position: right; /* Add this */
+    top: 800px; /* Add this */
+  
     ul {
-        list-style:none;
-        padding-left:0;
-        li a {
-            transition: 0.2s;
-            color: $grey;
-        }
+      list-style: none;
+      padding-left: 0;
+      li a {
+        transition: 0.2s;
+        color: $grey;
+      }
     }
-
-}
+  }
+  
 
 li.active-section {
     font-size: 25px;
